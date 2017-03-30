@@ -1,0 +1,4 @@
+D:\Facultad\UTN\UTN 2016\Net\TP2\TP2\Negocio\bin\Debug\Negocio.dll
+D:\Facultad\UTN\UTN 2016\Net\TP2\TP2\Negocio\bin\Debug\Negocio.pdb
+D:\Facultad\UTN\UTN 2016\Net\TP2\TP2\Negocio\obj\Debug\Negocio.dll
+D:\Facultad\UTN\UTN 2016\Net\TP2\TP2\Negocio\obj\Debug\Negocio.pdb
