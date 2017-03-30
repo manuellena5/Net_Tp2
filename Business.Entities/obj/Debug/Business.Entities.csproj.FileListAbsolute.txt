@@ -1,0 +1,15 @@
+C:\Users\manuel\Documents\GitHub\SistemaAcademiaTP2\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Users\manuel\Documents\GitHub\SistemaAcademiaTP2\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Users\manuel\Documents\GitHub\SistemaAcademiaTP2\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache
+C:\Users\manuel\Documents\GitHub\SistemaAcademiaTP2\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Users\manuel\Documents\GitHub\SistemaAcademiaTP2\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
+D:\SistemaAcademiaTP2\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+D:\SistemaAcademiaTP2\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+D:\SistemaAcademiaTP2\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache
+D:\SistemaAcademiaTP2\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+D:\SistemaAcademiaTP2\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Users\manuel\Desktop\TP2\Business.Entities\bin\Debug\Business.Entities.dll
+C:\Users\manuel\Desktop\TP2\Business.Entities\bin\Debug\Business.Entities.pdb
+C:\Users\manuel\Desktop\TP2\Business.Entities\obj\Debug\Business.Entities.dll
+C:\Users\manuel\Desktop\TP2\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Users\manuel\Desktop\TP2\Business.Entities\obj\Debug\Business.Entities.csprojResolveAssemblyReference.cache

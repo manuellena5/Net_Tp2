@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="UI.Web.Site1" MasterPageFile="" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Academia</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--<style type="text/css">
+        .auto-style1 {
+            text-align: left;
+        }
+    </style>--%>
+</head>
+<body>
+    <form id="bodyForm" runat="server">
+        <%--<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>--%>
+        <div>
+        <%--<link href="CSS/cssmenu.css" rel="stylesheet" />--%>
+        <%--<asp:Menu runat="server" ID="menu" DataSourceID="SiteMapDataSource"></asp:Menu>--%>
+        <%--<asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />--%>
+            <%--<asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick"> </asp:Timer>--%>
+        <img src="../image/images.jpg" style="height: 14px; width: 75px; float: left;" />Sistema de Gestiónde Alumnos en Internet
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Universidad Tecnologia Nacional
+        </div>
+        <div id="Cabecera" class="menuCabeza"  >
+            <asp:Menu ID="Menu1" runat="server" BackColor="#1e0000"  DynamicHorizontalOffset="6" Font-Names="Arial" Font-Size="Small" ForeColor="#a5d6f3" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#1e0000" ForeColor="#a5d6f3" />
+                <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="10px" />
+                <DynamicMenuStyle BackColor="#000" />
+                <DynamicSelectedStyle BackColor="#000" />
+                <Items >
+                    <asp:MenuItem Text="Inicio" Value="Inicio"  runat="server" NavigateUrl="~/Formulario/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem  Text="Administrador"  Value="Gestion Persona" NavigateUrl="~/Formulario/frmpersonas.aspx"  >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Profesor" Value="Profesor" NavigateUrl="~/Formulario/frmprofesor.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Alumno" Value="Alumno" NavigateUrl="~/Formulario/frmalumno.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Formulario/Usuarios.aspx" Text="Usuario" Value="Usuario"></asp:MenuItem>
+                    <asp:MenuItem Text="Inscribir a Examen" Value="Inscripcion" NavigateUrl="~/Formulario/frmexamen.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Inscribir a Cursar" Value="Inscribir a Cursar" NavigateUrl="~/Formulario/frmcursar.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Formulario/frmdocentecurso.aspx" Text="Docente Curso" Value="Docente Curso"></asp:MenuItem>
+                    <asp:MenuItem Text="Consultar" Value="Consultar">
+                        <asp:MenuItem NavigateUrl="~/Formulario/frmVer_Materia_Aprobada.aspx" Text="Materia Aprobada" Value="Materia Aprobada"></asp:MenuItem>
+                        <asp:MenuItem Text="Estado academico" Value="Estado academico"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Agregar" Value="Agregar Notas">
+                        <asp:MenuItem Text="Nota Final" Value="Nota Final" NavigateUrl="~/Formulario/frmAgregarNotas.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Regularidad" Value="Regularidad" NavigateUrl="~/Formulario/frmpasarregularidad.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Reportes" Value="Reportes">
+                        <asp:MenuItem Text="Cursos" Value="Cursos" NavigateUrl="~/Reportes/frmreportescurso.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Planes" Value="Planes" NavigateUrl="~/Reportes/frmreportePlan.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Carrera" Value="Carrera">
+                        <asp:MenuItem NavigateUrl="~/Formulario/frmMaterias.aspx" Text="Materias" Value="Materias"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Formulario/frmPlanes.aspx" Text="Plan" Value="Plan"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Formulario/frmEspecialidades.aspx" Text="Especialidad" Value="Especialidad"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Formulario/frmCursos.aspx" Text="Curso" Value="Curso"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Formulario/frmComisiones.aspx" Text="Comision" Value="Comision"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem runat="server"  NavigateUrl="~/Formulario/frmlogin.aspx" Text="Log Out" Value="LogOut"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#1e0000" ForeColor="#a5d6f3" />
+                <StaticMenuItemStyle HorizontalPadding="10px" VerticalPadding="7px"/>
+                <StaticSelectedStyle BackColor="#1e0000" />
+            </asp:Menu>
+            
+
+             <%--<h2>&nbsp;&nbsp;&nbsp; SYSACAD </h2>--%>
+
+            <div id="contenidoCabecera">
+               
+                &nbsp;<%--<img src="../image/Sysacad.jpg" style="height: 32px; width: 200px" />--%><%--<div id="barrahorizontal">
+                    <ul>
+                        <li id="centralbarhor">
+                            <asp:LinkButton ID="LinkInicio" runat="server" PostBackUrl="~/Formulario/Home.aspx">Inicio</asp:LinkButton>
+                            <asp:LinkButton ID="LinkPersona" runat="server" PostBackUrl="~/Formulario/frmpersonaprincipal.aspx">Personas</asp:LinkButton>
+                            <asp:LinkButton ID="LinkInscripcion" runat="server" PostBackUrl="~/Formulario/frmInscripcionprincipal.aspx">Inscripcion</asp:LinkButton>
+                            <asp:LinkButton ID="LinkConsulta" runat="server" PostBackUrl="~/Formulario/frmconsultaprincipal.aspx">Consulta</asp:LinkButton>
+                            <asp:LinkButton ID="LinkCarrera" runat="server" PostBackUrl="~/Formulario/frmcarreraprincipal.aspx">Carrera</asp:LinkButton>
+                        </li>
+
+                    </ul>
+                </div>--%><div id="titulo">
+                </div>
+            </div>
+        </div>
+        <%--<div id="bajo">--%>
+            <div id="columnaiz">
+
+                <asp:ContentPlaceHolder ID="Contenidomenucontextual" runat="server">
+                  
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="columnacentro">
+                <asp:ContentPlaceHolder ID="Contenidoprincipal" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+          <%--  <div id="columnader">
+            </div>--%>
+           <%-- <div id="pie">
+                <span>Sistema academia trabajo final</span>
+            </div>--%>
+        <%--</div>--%>
+        <div>
+        </div>
+
+    </form>
+</body>
+</html>
